@@ -1,6 +1,5 @@
 # RD-UNet
 Title: *Residual Dual U-shape Networks With Improved Skip Connections for Cloud Detection* [[paper]](https://ieeexplore.ieee.org/document/10335738/)<br>
-Title: *Bishift Networks for Thick Cloud Removal with Multitemporal Remote Sensing Images* [[paper]](https://www.hindawi.com/journals/ijis/2023/9953198/)<br>
 
 A. Li, X. Li and X. Ma, "Residual Dual U-shape Networks With Improved Skip Connections for Cloud Detection," in IEEE Geoscience and Remote Sensing Letters, doi: 10.1109/LGRS.2023.3337860.
 <br>
