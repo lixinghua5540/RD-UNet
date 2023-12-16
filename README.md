@@ -10,7 +10,8 @@ Cloud detection in remote sensing images is a challenging task that plays a cruc
 <br>
 <br>
 ![image](https://github.com/lixinghua5540/RD-UNet/blob/master/RD-UNet/images/Fig.%201.png)
-<br>Fig. 1.The architecture of the proposed residual dual U-shape networks (RD-UNet).
+<br>Fig. 1.The architecture of the proposed residual dual U-shape networks (RD-UNet).<br>
+<br>
 <br>
 ***Usage***
 <br>
