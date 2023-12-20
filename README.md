@@ -1,7 +1,7 @@
 # RD-UNet
 Title: *Residual Dual U-shape Networks With Improved Skip Connections for Cloud Detection* [[paper]](https://ieeexplore.ieee.org/document/10335738/)<br>
 
-A. Li, X. Li and X. Ma, "Residual Dual U-shape Networks With Improved Skip Connections for Cloud Detection," in IEEE Geoscience and Remote Sensing Letters, doi: 10.1109/LGRS.2023.3337860.
+A. Li, X. Li and X. Ma, "Residual Dual U-shape Networks With Improved Skip Connections for Cloud Detection," IEEE Geoscience and Remote Sensing Letters, IEEE Geoscience and Remote Sensing Letters, vol. 21, pp. 1-5, Art. no 5000205, 2024.
 <br>
 <br>
 ***Introduction***<br>
