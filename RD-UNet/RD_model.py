@@ -3,7 +3,7 @@ from keras.models import Model
 from cbam import cbam_module
 from keras.layers import Input, concatenate, Conv2D, MaxPooling2D, Conv2DTranspose, BatchNormalization,\
     Activation, Dropout
-import keras
+import 
 
 def bn_relu(input_tensor):
     input_tensor = BatchNormalization(axis=3)(input_tensor)
