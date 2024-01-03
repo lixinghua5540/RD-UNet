@@ -10,7 +10,7 @@ from keras.callbacks import ModelCheckpoint, ReduceLROnPlateau, CSVLogger
 from keras.optimizers import Adam
 from sklearn.model_selection import train_test_split
 
-import cloud_net_model
+import RD_model
 from generators import mybatch_generator_train, mybatch_generator_validation
 from losses import mloss
 from utils import ADAMLearningRateTracker
@@ -22,7 +22,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 
 def train():
-    model = cloud_net_model.model_arch(input_rows=in_rows,
+    model = RD_model.model_arch(input_rows=in_rows,
                                        input_cols=in_cols,
                                        num_of_channels=num_of_channels,
                                        num_of_classes=num_of_classes)
@@ -55,8 +55,8 @@ def train():
         validation_data=mybatch_generator_validation(list(zip(val_img_split, val_msk_split)), in_rows, in_cols, batch_sz, max_bit),
         validation_steps=np.ceil(len(val_img_split) / batch_sz),
         callbacks=[model_checkpoint, lr_reducer, ADAMLearningRateTracker(end_learning_rate), csv_logger],
-        # workers=8,
-        # use_multiprocessing=True
+        workers=8,
+        use_multiprocessing=True
     )
 
 
