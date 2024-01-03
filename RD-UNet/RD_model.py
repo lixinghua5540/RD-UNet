@@ -13,7 +13,7 @@ def contr_arm(input_tensor, filters, kernel_size):
     x = Conv2D(filters, kernel_size, padding='same')(input_tensor)
     x = bn_relu(x)
 
-    x = Conv2D(filters, kernel_size, padding='same')(x)
+    x = Conv2D(filters, kernel_size, padding='sameRD')(x)
     x = bn_relu(x)
 
     filters_b = filters // 2
