@@ -2,7 +2,7 @@
 from __future__ import print_function
 import os
 import numpy as np
-import cloud_net_model
+import RD_model
 from generators import mybatch_generator_prediction
 import tifffile as tiff
 import pandas as pd
@@ -13,7 +13,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 
 def prediction():
-    model = cloud_net_model.model_arch(input_rows=in_rows,
+    model = RD_model.model_arch(input_rows=in_rows,
                                        input_cols=in_cols,
                                        num_of_channels=num_of_channels,
                                        num_of_classes=num_of_classes)
