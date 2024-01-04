@@ -40,7 +40,7 @@ def prediction():
         tiff.imsave(os.path.join(PRED_FOLDER, pred_dir, str(image_id)), image)
 
 
-GLOBAL_PATH = 'path to 38-cloud dataset'
+GLOBAL_PATH = 'path'
 TRAIN_FOLDER = os.path.join(GLOBAL_PATH, 'TrainingSPARCS')
 TEST_FOLDER = os.path.join(GLOBAL_PATH, 'TestSPARCS')
 PRED_FOLDER = os.path.join(GLOBAL_PATH, 'Predictions')
