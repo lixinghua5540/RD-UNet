@@ -4,7 +4,7 @@ from skimage.transform import resize
 import numpy as np
 from augmentation import flipping_img_and_msk, rotate_cclk_img_and_msk, rotate_clk_img_and_msk, zoom_img_and_msk
 
-def mybatch_generator_train(zip_list, img_rows, img_cols, batch_size, shuffle=True, max_possible_input_value=65536):
+def mybatch_generator_train(zip_list, img_rows, img_cols, batch_size, max_possible_input_value=65535, shuffle=True):
     number_of_batches = np.ceil(len(zip_list) / batch_size)
     if shuffle:
         random.shuffle(zip_list)
@@ -59,7 +59,7 @@ def mybatch_generator_train(zip_list, img_rows, img_cols, batch_size, shuffle=Tr
             counter = 0
 
 
-def mybatch_generator_validation(zip_list, img_rows, img_cols, batch_size, shuffle=False, max_possible_input_value=65536):
+def mybatch_generator_validation(zip_list, img_rows, img_cols, batch_size, max_possible_input_value=65535, shuffle=False):
     number_of_batches = np.ceil(len(zip_list) / batch_size)
     if shuffle:
         random.shuffle(zip_list)
@@ -93,7 +93,7 @@ def mybatch_generator_validation(zip_list, img_rows, img_cols, batch_size, shuff
             counter = 0
 
 
-def mybatch_generator_prediction(tstfiles, img_rows, img_cols, batch_size, max_possible_input_value=65536):
+def mybatch_generator_prediction(tstfiles, img_rows, img_cols, batch_size, max_possible_input_value=65535):
     number_of_batches = np.ceil(len(tstfiles) / batch_size)
     counter = 0
 
